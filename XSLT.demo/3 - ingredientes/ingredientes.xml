@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="ingredientes.xsl"?>
+
+<ingredienteLista>
+  <ingrediente qtd="600" und="g">Arroz de grão curto (nishiki)</ingrediente>
+  <ingrediente qtd="750" und="ml">Água</ingrediente>
+  <ingrediente qtd="125" und="ml">Vinagre de arroz</ingrediente>
+  <ingrediente qtd="55" und="g">Açucar</ingrediente>
+  <ingrediente qtd="0.5" und="colher de chá">Sal</ingrediente>
+</ingredienteLista>
+

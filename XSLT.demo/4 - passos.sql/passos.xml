@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="passos.xsl"?>
+<Import name="Passo" query="SELECT * FROM [Passo];" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="teste.xsd">
+	<!--MS Access-->
+	<!--Column name:codigo type:INT-->
+	<!--Column name:descritivo type:TEXT maxlength:100-->
+	<!--Column name:periodo type:NUMERIC precision:5 scale:1-->
+	<Row>
+		<codigo>1</codigo>
+		<descritivo>Por de molho o lombo de bacalhau</descritivo>
+		<periodo>2880</periodo>
+	</Row>
+	<Row>
+		<codigo>2</codigo>
+		<descritivo>Levar o leite ao lume no tacho</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>3</codigo>
+		<descritivo>Introduzir o bacalhau no tacho</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>4</codigo>
+		<descritivo>Ferver o bacalhau</descritivo>
+		<periodo>2</periodo>
+	</Row>
+	<Row>
+		<codigo>5</codigo>
+		<descritivo>Retirar o bacalhau do tacho</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>6</codigo>
+		<descritivo>Escorrer o bacalhau</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>7</codigo>
+		<descritivo>Passar o bacalhau por água fria</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>8</codigo>
+		<descritivo>Colocar o bacalhau numa assadeira</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>9</codigo>
+		<descritivo>Cortar a cebola em rodelas finas</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>10</codigo>
+		<descritivo>Picar os dentes de alho</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>11</codigo>
+		<descritivo>Colocar a cebola e o alho sobre o bacalhau</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>12</codigo>
+		<descritivo>Ferver batatas descascadas</descritivo>
+		<periodo>8</periodo>
+	</Row>
+	<Row>
+		<codigo>13</codigo>
+		<descritivo>Escorrer batatas</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>14</codigo>
+		<descritivo>Cortar batatas em rodelas</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>15</codigo>
+		<descritivo>Por batatas em redor do bacalhau</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>16</codigo>
+		<descritivo>Temperar com pimenta</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>17</codigo>
+		<descritivo>Regar com azeite</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>18</codigo>
+		<descritivo>Levar ao forno a assadeira</descritivo>
+		<periodo>35</periodo>
+	</Row>
+	<Row>
+		<codigo>19</codigo>
+		<descritivo>Alourar o bife dos dois lados em 30 g de margarina bem quente</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>20</codigo>
+		<descritivo>Temperar o bife dos dois lados com sal grosso</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>21</codigo>
+		<descritivo>Temperar com pimenta preta moída na altura</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>22</codigo>
+		<descritivo>Reduzir o calor</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>23</codigo>
+		<descritivo>Juntar 30 g de margarina</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>24</codigo>
+		<descritivo>Juntar natas</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>25</codigo>
+		<descritivo>Agitar a frigideira</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>26</codigo>
+		<descritivo>Raspar os resíduos do fundo com uma espátula de madeira</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>27</codigo>
+		<descritivo>Tirar do lume</descritivo>
+		<periodo>0</periodo>
+	</Row>
+	<Row>
+		<codigo>28</codigo>
+		<descritivo>Adicionar o sumo de limão</descritivo>
+		<periodo>0</periodo>
+	</Row>
+</Import>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Este exemplo dobre a família Silva é académico -->
+<!-- Qualquer semelhança com a realidade é pura coincidência -->
+<família nome="Silva" xsi:noNamespaceSchemaLocation="familia.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<masculino nomePróprio="João" apelido="Nunes da Silva" id="ID_1" foto="ID_1.jpg">
+		<nascimento data="1957-08-13">
+			<progenitores mãe="ID_3" pai="ID_2"/>
+			<naturalidade país="Portugal" coordenadas="38.732533,-9.147221">Lisboa</naturalidade>
+		</nascimento>
+	</masculino>
+	<masculino nomePróprio="Jacinto" apelido="Barbosa da Silva" id="ID_101" foto="ID_101.jpg">
+		<nascimento data="1977-10-13">
+			<progenitores mãe="ID_111" pai="ID_1"/>
+			<naturalidade país="Portugal" coordenadas="38.732533,-9.147221">Lisboa</naturalidade>
+		</nascimento>
+	</masculino>
+	<masculino nomePróprio="José" apelido="Nunes da Silva" id="ID_10" foto="ID_10.jpg">
+		<nascimento data="1957-08-13">
+			<progenitores mãe="ID_3" pai="ID_2"/>
+			<naturalidade país="Portugal" coordenadas="38.732533,-9.147221">Lisboa</naturalidade>
+		</nascimento>
+	</masculino>
+	<masculino nomePróprio="Joaquim" apelido="Lopes da Silva" id="ID_2" foto="ID_2.jpg">
+		<nascimento data="1926-01-12">
+			<progenitores mãe="ID_24" pai="ID_22"/>
+			<naturalidade país="Portugal" coordenadas="38.69675699540154,-9.420743999797303">Cascais</naturalidade>
+		</nascimento>
+	</masculino>
+	<masculino nomePróprio="Januário" apelido="Barbosa da Silva" id="ID_32" foto="ID_32.jpg">
+		<nascimento data="1930-03-12">
+			<progenitores mãe="ID_24" pai="ID_22"/>
+			<naturalidade país="Portugal" coordenadas="38.69675699540154,-9.420743999797303">Cascais</naturalidade>
+		</nascimento>
+	</masculino>
+	<masculino nomePróprio="Oscar" apelido="Meireles da Silva" id="ID_22" foto="ID_22.jpg">
+		<nascimento data="1888-01-12">
+			<naturalidade país="Portugal" coordenadas="38.69675699540154,-9.420743999797303">Cascais</naturalidade>
+		</nascimento>
+	</masculino>
+	<feminino nomePróprio="Amélia" apelido="Fonseca Lopes" id="ID_24" foto="ID_24.jpg">
+		<nascimento data="1889-02-24">
+			<naturalidade país="Portugal" coordenadas="38.69675699540154,-9.420743999797303">Cascais</naturalidade>
+		</nascimento>
+	</feminino>
+	<feminino nomePróprio="Eugénia" apelido="Nunes da Silva" id="ID_3" foto="ID_3.jpg">
+		<nascimento data="1927-08-13">
+			<naturalidade país="Portugal" coordenadas="38.69675699540154,-9.420743999797303">Cascais</naturalidade>
+		</nascimento>
+	</feminino>
+	<feminino nomePróprio="Bela" apelido="Nunes da Silva" id="ID_4" foto="ID_4.jpg">
+		<nascimento data="1957-08-13">
+			<progenitores mãe="ID_3" pai="ID_2"/>
+			<naturalidade coordenadas="38.732533,-9.147221">Lisboa</naturalidade>
+		</nascimento>
+	</feminino>
+	<feminino nomePróprio="Ana" apelido="Nunes da Silva" id="ID_11" foto="ID_11.jpg">
+		<nascimento data="1957-08-13">
+			<progenitores mãe="ID_3" pai="ID_2"/>
+			<naturalidade coordenadas="38.732533,-9.147221">Lisboa</naturalidade>
+		</nascimento>
+	</feminino>
+	<feminino nomePróprio="Antonieta" apelido="Fonsea Barbosa" id="ID_111" foto="ID_111.jpg">
+		<nascimento data="1957-08-13">
+			<naturalidade coordenadas="38.732533,-9.147221">Lisboa</naturalidade>
+		</nascimento>
+	</feminino>
+	<casamento cônjuge1="ID_2" cônjuge2="ID_3" data="1946-08-13"/>
+</família>

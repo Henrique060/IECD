@@ -1,0 +1,76 @@
+BODY { 
+  font-family: sans-serif; 
+  background: white; 
+}
+H1,H2,H3 { 
+  color: #008; 
+  text-align: center; 
+}
+H1 {
+  font-size: 24pt; 
+  margin-top: -10px;
+}
+H2 { 
+  font-size: 17pt; 
+  margin-top: -17px;
+}
+td h2 {
+  margin-top: 0px;
+}
+H3 { 
+  font-size: 14pt; 
+  margin-top: 0px;
+}
+H4 { 
+  text-align: center;
+}
+TABLE,TD,TR,UL,LI,P,DT,DL,DD,B,SMALL,P { 
+  font-family: sans-serif; 
+}
+H1.normal,H3.normal,P.normal {
+  font-family: Arial, Helvetica, serif; 
+  color: #000; 
+}
+A:link { 
+  color: #c00 
+}
+A:visited { 
+  color: #800;
+}
+A:active { 
+  color: #f00; 
+}
+INPUT {
+  font-family: "Courier New", Courier, monospace; 
+}
+TT,PRE { 
+  font-family: "Courier New", Courier, monospace; 
+  font-weight: bold;
+}
+DIV.center {
+  text-align: center;
+}
+PRE {
+  margin-bottom: 0px;
+}
+TABLE.code {
+  background: #ffc;
+}
+TABLE.data {
+  background: #ccf;
+}
+P.text {
+  margin-top: 0;
+}
+table.banner {
+  background-color: #c00;
+  color: #ff3;
+  font-weight: bold;
+  font-size: 130%;
+}
+table.banner img {
+  color: #000;
+}
+table.banner a, table.banner a:link, table.banner a:visited, table.banner a:active {
+  color: #ff8;
+}

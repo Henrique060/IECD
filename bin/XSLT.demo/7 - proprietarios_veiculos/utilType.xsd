@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Tipos Uteis -->
+<!-- by Porfírio Filipe -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="AT_Telefone">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d\d\s?\d{7}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AT_Data_PT">
+		<xs:annotation>
+			<xs:documentation>Data com formato tipico português dd/mm/aaaa. A validação é superficial!</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{2}[/]\d{2}[/]\d{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AT_Data">
+		<xs:annotation>
+			<xs:documentation>Data com formato tipico português dd/mm/2aaa. A validação ainda incompleta!</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="AT_Data_PT">
+			<xs:pattern value="([012]\d|30|31)[/]([0][1]|[0][2]|[0][3]|[0][4]|[0][5]|[0][6]|[0][7]|[0][8]|[0][9]|[1][0]|[1][1]|[1][2])[/][2]\d{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AT_emailAddress">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="AT_Nome">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="((da|de|do)\s|d')?[A-Z|ÁÀÃÂÉÈÊÍÌÒÓÕÔÙÚ][a-z|áàãâéèêíìóòõôúùç]{1,30}"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+

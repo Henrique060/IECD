@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="latLonListType">
+		<xs:annotation>
+			<xs:documentation>valida pares latitude e longitude
+               (i.e. 38.732533,-9.147221)
+ </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[\-]?\d{1,2}\.\d+,[\-]?\d{1,3}\.\d+( [\-]?\d{1,2}\.\d+,[\-]?\d{1,3}\.\d+)*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="membro">
+		<xs:annotation>
+			<xs:documentation>membro da família</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="pessoa" abstract="true">
+		<xs:annotation>
+			<xs:documentation>representação abstrata de pessoa</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="nascimento">
+				<xs:annotation>
+					<xs:documentation>parentesco filho</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="progenitores" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>pais bilológicos, caso não sejam conhecidos não é preenchido</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:attribute name="pai" type="xs:IDREF" use="required">
+									<xs:annotation>
+										<xs:documentation>referência para pessoa do género masculino</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+								<xs:attribute name="mãe" type="xs:IDREF" use="required">
+									<xs:annotation>
+										<xs:documentation>referência para pessoa do género feminino</xs:documentation>
+									</xs:annotation>
+								</xs:attribute>
+							</xs:complexType>
+						</xs:element>
+						<xs:element ref="naturalidade">
+							<xs:annotation>
+								<xs:documentation>local de nascimento</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:sequence>
+					<xs:attribute name="data" type="xs:date" use="required">
+						<xs:annotation>
+							<xs:documentation>data de nascimento</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:ID" use="required">
+			<xs:annotation>
+				<xs:documentation>identificador</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="nomePróprio" use="required">
+			<xs:annotation>
+				<xs:documentation>nome próprio</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="2"/>
+					<xs:maxLength value="30"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="apelido" use="required">
+			<xs:annotation>
+				<xs:documentation>nomes de família</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:minLength value="2"/>
+					<xs:maxLength value="60"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="foto" type="xs:anyURI" use="required">
+			<xs:annotation>
+				<xs:documentation>referência para fotografia tipo passe</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="dataFalecimento" type="xs:date">
+			<xs:annotation>
+				<xs:documentation>data de falecimento</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="membroM">
+		<xs:annotation>
+			<xs:documentation>representação de pessoa do género masculino</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="pessoa"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="membroF">
+		<xs:annotation>
+			<xs:documentation>representação de pessoa do género feminino</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="pessoa"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="naturalidade">
+		<xs:annotation>
+			<xs:documentation>naturalidade</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="país" default="Portugal">
+						<xs:annotation>
+							<xs:documentation>país onde nasceu</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:minLength value="3"/>
+								<xs:maxLength value="40"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute name="coordenadas" type="latLonListType" default="38.732533,-9.147221">
+						<xs:annotation>
+							<xs:documentation>coordenadas geográficas do local de nascimento</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="família">
+		<xs:annotation>
+			<xs:documentation>raíz</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="masculino" type="membroM" minOccurs="1" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>membro da família do género masculino</xs:documentation>
+					</xs:annotation>
+					<xs:key name="pkmasculino">
+						<xs:selector xpath="."/>
+						<xs:field xpath="@id"/>
+					</xs:key>
+					<xs:unique name="akfotoM">
+						<xs:selector xpath="."/>
+						<xs:field xpath="@foto"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="feminino" type="membroF" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>membro da família do género feminino</xs:documentation>
+					</xs:annotation>
+					<xs:key name="pkfeminino">
+						<xs:selector xpath="."/>
+						<xs:field xpath="@id"/>
+					</xs:key>
+					<xs:unique name="akfotoF">
+						<xs:selector xpath="."/>
+						<xs:field xpath="@foto"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="casamento" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>parentesco cônjuge legal</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="data" type="xs:date" use="required">
+							<xs:annotation>
+								<xs:documentation>data do casamento</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="cônjuge1" type="xs:IDREF" use="required">
+							<xs:annotation>
+								<xs:documentation>referência para qualquer membro da família</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="cônjuge2" type="xs:IDREF" use="required">
+							<xs:annotation>
+								<xs:documentation>referência para qualquer membro da família</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+					<xs:unique name="ak1">
+						<xs:selector xpath="."/>
+						<xs:field xpath="@cônjuge1"/>
+					</xs:unique>
+					<xs:unique name="ak2">
+						<xs:selector xpath="."/>
+						<xs:field xpath="@cônjuge2"/>
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="nome" use="required">
+				<xs:annotation>
+					<xs:documentation>nome da família</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="2"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:keyref name="pkmãe" refer="pkfeminino">
+			<xs:selector xpath="./*/*/progenitores"/>
+			<xs:field xpath="@mãe"/>
+		</xs:keyref>
+		<xs:keyref name="pkpai" refer="pkmasculino">
+			<xs:selector xpath="./*/*/progenitores"/>
+			<xs:field xpath="@pai"/>
+		</xs:keyref>
+	</xs:element>
+</xs:schema>

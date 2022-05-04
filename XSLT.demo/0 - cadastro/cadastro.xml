@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="cadastro.xsl"?>
+<cadastro>
+	<utilizador>
+		<nome>ABEL AVILA</nome>
+		<nivel>5</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>ABILIO ABELHA</nome>
+		<nivel>3</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>AIRES ARAUJO</nome>
+		<nivel>1</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>ALEXANDRA	ALCOENTRE</nome>
+		<nivel>5</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>ANDRE AMADOR</nome>
+		<nivel>2</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>ANDRE AMENDOEIRA</nome>
+		<nivel>3</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>ANTONIO ANDANA</nome>
+		<nivel>5</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>AUGUSTO AGUEDA</nome>
+		<nivel>3</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>BERTA BRITO</nome>
+		<nivel>5</nivel>
+	</utilizador>
+	<utilizador>
+		<nome>BHAVISH BACHU</nome>
+		<nivel>3</nivel>
+	</utilizador>
+	<utilizador>
+		<nome>BRUCE BORGES</nome>
+		<nivel>3</nivel>
+	</utilizador>
+	<utilizador>
+		<nome>BRUNO BRAUMANN</nome>
+		<nivel>3</nivel>
+	</utilizador>
+	<utilizador>
+		<nome>BRUNO BRUM</nome>
+		<nivel>3</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>BRUNO BURNAY</nome>
+		<nivel>2</nivel>
+	</utilizador>
+		<utilizador>
+		<nome>CELSO COLAÇO</nome>
+		<nivel>4</nivel>
+	</utilizador>
+</cadastro>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- exemplo dtd <!DOCTYPE LPROPRIETÁRIOS SYSTEM "proprietarios.dtd"> -->
+<!-- Sample by Porfírio Filipe -->
+<?xml-stylesheet type="text/xsl" href="inspec-html.xsl"?>
+<LPROPRIETÁRIOS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="proprietarios.xsd">
+	<PROPRIETÁRIO MORADA="Travessa Sítio da Cruz Dourada, nº 12, Agualva-Cacém">
+		<NOME>
+			<Próprio>Aurora</Próprio>
+			<Apelido>Áurea</Apelido>
+			<Apelido>Salve</Apelido>-<Apelido>Rainha</Apelido>
+		</NOME>
+		<CONTACTO>
+			<TELEFONE>967788999</TELEFONE>
+		</CONTACTO>
+		<VEÍCULO TIPO="Audi, A4, Ligeiro" MATRÍCULA="AB-11-02" DATAINSPEÇÃO="01/08/2021"/>
+	</PROPRIETÁRIO>
+	<PROPRIETÁRIO MORADA="Av. da Liberdade, nº 10, Lisboa">
+		<NOME>
+			<Próprio>José</Próprio> Policarpo <Apelido>da Silva</Apelido>
+			<Apelido>Corte</Apelido>-<Apelido>Real</Apelido>
+		</NOME>
+		<CONTACTO>
+			<EMAIL>Anao.Jonas@mail.pt</EMAIL>
+		</CONTACTO>
+		<VEÍCULO TIPO="Honda, CBR 1000, Motociclo" MATRÍCULA="AB-11-00" DATAINSPEÇÃO="01/08/2021"/>
+	</PROPRIETÁRIO>
+	<PROPRIETÁRIO MORADA="Av. Conselheiro Emidio Navarro, nº 1, Chelas">
+		<NOME>
+			<Próprio>Anacleto</Próprio>
+			<Próprio>João</Próprio>
+			<Apelido>Dias</Apelido>
+			<Apelido>da Silva</Apelido>
+		</NOME>
+		<CONTACTO>
+			<EMAIL>Anao.Jonas@mail.pt</EMAIL>
+		</CONTACTO>
+		<VEÍCULO TIPO="Seat, Toledo, Ligeiro" MATRÍCULA="AB-11-01" DATAINSPEÇÃO="03/01/2021"/>
+		<VEÍCULO TIPO="Seat, Ibiza, Ligeiro" MATRÍCULA="AB-11-01" DATAINSPEÇÃO="19/12/2021"/>
+	</PROPRIETÁRIO>
+</LPROPRIETÁRIOS>

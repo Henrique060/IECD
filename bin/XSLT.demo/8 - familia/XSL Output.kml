@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<Document>
+		<name>Familia </name>
+		<open>1</open>
+		<Style id="manBalloonStyle">
+			<BalloonStyle>
+				<bgColor>ffffffbb</bgColor>
+				<text>
+      &lt;b&gt;&lt;font color="#CC0000" size="+3"&gt;$[name]&lt;/font&gt;&lt;/b&gt;
+      &lt;br/&gt;
+	  Local de Nascimento de 
+      &lt;font face="Courier"&gt;$[description]&lt;/font&gt;
+      &lt;br/&gt;
+	  </text>
+			</BalloonStyle>
+			<IconStyle id="ManStyle">
+				<scale>1.3</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/man.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+		</Style>
+		<Style id="womanBalloonStyle">
+			<BalloonStyle>
+				<bgColor>7fff0000</bgColor>
+				<text>
+      &lt;b&gt;&lt;font color="#CC0000" size="+3"&gt;$[name]&lt;/font&gt;&lt;/b&gt;
+      &lt;br/&gt;
+	  Local de Nascimento de 
+      &lt;font face="Courier"&gt;$[description]&lt;/font&gt;
+      &lt;br/&gt;
+	  </text>
+			</BalloonStyle>
+			<IconStyle id="ManStyle">
+				<scale>1.3</scale>
+				<Icon>
+					<href>http://maps.google.com/mapfiles/kml/shapes/woman.png</href>
+				</Icon>
+				<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+			</IconStyle>
+		</Style>
+		<Placemark xmlns="">
+			<name>Lisboa</name>
+			<description>João Nunes da Silva</description>
+			<styleUrl>#manBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.147221, 38.732533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Lisboa</name>
+			<description>Jacinto Barbosa da Silva</description>
+			<styleUrl>#manBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.147221, 38.732533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Lisboa</name>
+			<description>José Nunes da Silva</description>
+			<styleUrl>#manBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.147221, 38.732533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Cascais</name>
+			<description>Joaquim Lopes da Silva</description>
+			<styleUrl>#manBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.420743999797303, 38.69675699540154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Cascais</name>
+			<description>Januário Barbosa da Silva</description>
+			<styleUrl>#manBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.420743999797303, 38.69675699540154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Cascais</name>
+			<description>Oscar Meireles da Silva</description>
+			<styleUrl>#manBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.420743999797303, 38.69675699540154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Cascais</name>
+			<description>Amélia Fonseca Lopes</description>
+			<styleUrl>#womanBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.420743999797303, 38.69675699540154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Cascais</name>
+			<description>Eugénia Nunes da Silva</description>
+			<styleUrl>#womanBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.420743999797303, 38.69675699540154,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Lisboa</name>
+			<description>Bela Nunes da Silva</description>
+			<styleUrl>#womanBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.147221, 38.732533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Lisboa</name>
+			<description>Ana Nunes da Silva</description>
+			<styleUrl>#womanBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.147221, 38.732533,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark xmlns="">
+			<name>Lisboa</name>
+			<description>Antonieta Fonsea Barbosa</description>
+			<styleUrl>#womanBalloonStyle</styleUrl>
+			<Point>
+				<coordinates>-9.147221, 38.732533,0</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
+</kml>
